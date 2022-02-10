@@ -10,7 +10,7 @@ export default function App() {
     return (
         <ThemeProvider theme={Theme}>
             <div className="page__wrapper">
-                <Input />
+                <Input sublabel helperText={"Ola mate"}/>
             </div>
         </ThemeProvider>
     )
