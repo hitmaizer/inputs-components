@@ -10,7 +10,7 @@ export default styled.input`
     font-size: 14px;
     line-height: 20px;
     width: 200px;
-    text-indent: 12px;
+    text-indent: 10px;
 
     ${(props) => props.default && css `
         &:hover {
@@ -65,6 +65,10 @@ export default styled.input`
     ${(props) => props.fullWidth && css `
         width: 100%;
         height: 56px;
+    `}
+    
+    ${(props) => props.startIcon && css `
+        text-indent: 35px;
     `}
   
 `;
