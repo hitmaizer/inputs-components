@@ -1,6 +1,6 @@
 import React from 'react';
 import StyledInput from '../elements/StyledInputs'
-import StyledSpan from '../elements/StyledSpan';
+
 
 export default function TextInput(props) {
     return (
