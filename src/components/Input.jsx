@@ -1,5 +1,6 @@
 import React from 'react'
 import StyledInput from '../elements/StyledInputs'
+import { Phone } from '@styled-icons/boxicons-solid/Phone'
 
 export default function Input(props) {
     return (
@@ -8,7 +9,11 @@ export default function Input(props) {
             {
             props.textArea ? 
             <textarea></textarea> : 
-            <StyledInput md default placeholder="Placeholder" value={props.helperText}></StyledInput>
+            <div className="input__container">
+                {props.startIcon && <Phone size="24px" className="input__icon"/>}
+                <StyledInput md default placeholder="Placeholder" value={props.helperText}/>
+                {props.endIcon && <Phone size="24px" className="input__endicon"/>}
+            </div>
             }
             {props.sublabel && <span className="input__sublabel">Some Interesting Text</span>}
         </div>
