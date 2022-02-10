@@ -13,6 +13,9 @@
     flex-direction: row;
 }
 
+.input__wrapper {
+    width: auto;
+}
 .input__label {
     font-family: $noto;
     font-style: normal;
@@ -21,6 +24,7 @@
     line-height: 17px;
     color: $gray;
     margin-bottom: 4px;
+    display: inline-block;
 }
 
 .input__sublabel {
@@ -34,4 +38,32 @@
     &:hover {
         color: #D32F2F;
     }
+}
+
+.input__start {
+    text-indent: 35px;
+}
+
+.input__container {
+    position: relative;
+    display:inline-block;
+    width: 200px;
+}
+
+.input__icon {
+    color: $gray;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-60%, -50%);
+    z-index: 2;
+}
+
+.input__endicon {
+    color: $gray;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }

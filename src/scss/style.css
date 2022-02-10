@@ -25,6 +25,10 @@
           flex-direction: row;
 }
 
+.input__wrapper {
+  width: auto;
+}
+
 .input__label {
   font-family: "Noto Sans Display", sans-serif;
   font-style: normal;
@@ -33,6 +37,7 @@
   line-height: 17px;
   color: #333333;
   margin-bottom: 4px;
+  display: inline-block;
 }
 
 .input__sublabel {
@@ -47,4 +52,34 @@
 
 .input__sublabel:hover {
   color: #D32F2F;
+}
+
+.input__start {
+  text-indent: 35px;
+}
+
+.input__container {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+.input__icon {
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  -webkit-transform: translate(-60%, -50%);
+          transform: translate(-60%, -50%);
+  z-index: 2;
+}
+
+.input__endicon {
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
 }
