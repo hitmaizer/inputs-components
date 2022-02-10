@@ -34,3 +34,17 @@
   color: #333333;
   margin-bottom: 4px;
 }
+
+.input__sublabel {
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #828282;
+  margin-top: 4px;
+}
+
+.input__sublabel:hover {
+  color: #D32F2F;
+}
