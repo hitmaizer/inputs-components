@@ -5,7 +5,7 @@ export default function Input() {
     return (
         <div className="input__wrapper flex-col">
             <label htmlFor="" className="input__label">Label</label>
-           <StyledInput />
+           <StyledInput placeholder="Placeholder"/>
         </div>
     )
 }
