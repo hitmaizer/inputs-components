@@ -22,3 +22,16 @@
     color: $gray;
     margin-bottom: 4px;
 }
+
+.input__sublabel {
+    font-family: $noto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: $light-gray;
+    margin-top: 4px;
+    &:hover {
+        color: #D32F2F;
+    }
+}
