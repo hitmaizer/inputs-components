@@ -40,6 +40,10 @@
   display: inline-block;
 }
 
+.input__label.error {
+  color: #D32F2F;
+}
+
 .input__sublabel {
   font-family: "Noto Sans Display", sans-serif;
   font-style: normal;
@@ -68,9 +72,9 @@
   color: #333333;
   position: absolute;
   top: 50%;
-  left: 90%;
-  -webkit-transform: translate(-60%, -50%);
-          transform: translate(-60%, -50%);
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 2;
 }
 
@@ -78,8 +82,33 @@
   color: #333333;
   position: absolute;
   top: 50%;
-  left: 10%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 90%;
+  -webkit-transform: translate(-60%, -50%);
+          transform: translate(-60%, -50%);
   z-index: 2;
+}
+
+.page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 16px;
+}
+
+.button__title {
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
 }

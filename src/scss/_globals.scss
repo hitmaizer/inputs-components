@@ -25,6 +25,12 @@
     color: $gray;
     margin-bottom: 4px;
     display: inline-block;
+
+    
+}
+
+.input__label.error {
+    color: $danger;
 }
 
 .input__sublabel {
@@ -54,8 +60,8 @@
     color: $gray;
     position: absolute;
     top: 50%;
-    left: 90%;
-    transform: translate(-60%, -50%);
+    left: 10%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -63,7 +69,24 @@
     color: $gray;
     position: absolute;
     top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+    left: 90%;
+    transform: translate(-60%, -50%);
     z-index: 2;
+}
+
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.button__title {
+    font-family: $ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: $gray;
 }
