@@ -12,3 +12,13 @@
     display: flex;
     flex-direction: row;
 }
+
+.input__label {
+    font-family: $noto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: $gray;
+    margin-bottom: 4px;
+}
