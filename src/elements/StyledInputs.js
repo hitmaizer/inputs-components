@@ -10,6 +10,7 @@ export default styled.input`
     font-size: 14px;
     line-height: 20px;
     width: 200px;
+    text-indent: 12px;
 
     ${(props) => props.default && css `
         &:hover {
@@ -26,7 +27,6 @@ export default styled.input`
     ${(props) => props.error && css `
         border: solid 1px ${props.theme.colors.danger};
 
-
         &:hover {
             color: ${props.theme.colors.danger};
             border: solid 1px ${props.theme.colors.defaultHover};
@@ -35,7 +35,36 @@ export default styled.input`
         &:focus, :focus-visible {
             border: solid 1px ${props.theme.colors.danger};
         }
+    `}
+    
+    ${(props) => props.disabled && css `
+        border: solid 1px ${props.theme.colors.disabledStroke};
+        background-color: ${props.theme.colors.disabled};
 
+        &:hover {
+            border: solid 1px ${props.theme.colors.disabledStroke};
+            background-color: ${props.theme.colors.disabled};
+        }
+
+        &:focus, :focus-visible {
+            border: solid 1px ${props.theme.colors.disabledStroke};
+            background-color: ${props.theme.colors.disabled};
+        }
+    `}
+
+    ${(props) => props.sm && css `
+        width: 200px;
+        height: 40px;
+    `}
+    
+    ${(props) => props.md && css `
+        width: 200px;
+        height: 56px;
+    `}
+    
+    ${(props) => props.fullWidth && css `
+        width: 100%;
+        height: 56px;
     `}
   
 `;
