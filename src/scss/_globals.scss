@@ -13,17 +13,22 @@
     flex-direction: row;
 }
 
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+    gap: 16px;
+    max-width: 1440px;
+    padding: 16px;
+}
+
 .input__wrapper {
     width: auto;
 }
 .input__label {
     font-family: $noto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 17px;
-    color: $gray;
-    margin-bottom: 4px;
+    
     display: inline-block;
 
     
@@ -35,15 +40,6 @@
 
 .input__sublabel {
     font-family: $noto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 14px;
-    color: $light-gray;
-    margin-top: 4px;
-    &:hover {
-        color: #D32F2F;
-    }
 }
 
 .input__start {
@@ -63,6 +59,7 @@
     left: 10%;
     transform: translate(-50%, -50%);
     z-index: 2;
+
 }
 
 .input__endicon {
@@ -74,13 +71,6 @@
     z-index: 2;
 }
 
-.page__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    gap: 16px;
-}
 
 .button__title {
     font-family: $ubuntu;
@@ -89,4 +79,32 @@
     font-size: 12px;
     line-height: 12px;
     color: $gray;
+}
+
+.text__area {
+    width: 200px;
+    border-radius: 8px;
+    border: solid 1px $light-gray;
+}
+
+.item--rows {
+    gap: 32px;
+    
+}
+
+.item__wrapper {
+    min-width: 270px;
+}
+
+.footer__sign {
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #9E9E9E;
+
 }

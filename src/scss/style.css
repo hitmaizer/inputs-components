@@ -25,18 +25,28 @@
           flex-direction: row;
 }
 
+.page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 16px;
+  max-width: 1440px;
+  padding: 16px;
+}
+
 .input__wrapper {
   width: auto;
 }
 
 .input__label {
   font-family: "Noto Sans Display", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 17px;
-  color: #333333;
-  margin-bottom: 4px;
   display: inline-block;
 }
 
@@ -46,16 +56,6 @@
 
 .input__sublabel {
   font-family: "Noto Sans Display", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-  color: #828282;
-  margin-top: 4px;
-}
-
-.input__sublabel:hover {
-  color: #D32F2F;
 }
 
 .input__start {
@@ -88,22 +88,6 @@
   z-index: 2;
 }
 
-.page__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  gap: 16px;
-}
-
 .button__title {
   font-family: "Ubuntu Mono", monospace;
   font-style: normal;
@@ -111,4 +95,29 @@
   font-size: 12px;
   line-height: 12px;
   color: #333333;
+}
+
+.text__area {
+  width: 200px;
+  border-radius: 8px;
+  border: solid 1px #828282;
+}
+
+.item--rows {
+  gap: 32px;
+}
+
+.item__wrapper {
+  min-width: 270px;
+}
+
+.footer__sign {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: #9E9E9E;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import StyledInput from '../elements/StyledInputs'
+import StyledSpan from '../elements/StyledSpan';
 
 export default function TextInput(props) {
     return (
@@ -8,7 +9,7 @@ export default function TextInput(props) {
             <label htmlFor="" className="input__label error">Label</label>
                 <div className="input__container">
                 <StyledInput md default placeholder="Placeholder" defaultValue={props.helperText}/>
-                {props.sublabel && <span className="input__sublabel">Some Interesting Text</span>}
+                
                 </div>
             </div>
     )
