@@ -24,3 +24,13 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+.input__label {
+  font-family: "Noto Sans Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #333333;
+  margin-bottom: 4px;
+}
